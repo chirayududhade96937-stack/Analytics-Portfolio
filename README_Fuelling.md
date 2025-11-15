@@ -144,18 +144,31 @@ This project integrates historical analysis, volatility assessment, forecasting,
 ## Project Structure
 
 ```text
+├── .gitignore
+├── README.md
+|
 ├── data/
-│   ├── australia_trade_raw.xlsx
-│   ├── petroleum_exports.csv
-│   └── processed_data.xlsx
-├── visuals/
-│   ├── chapter1/
-│   ├── chapter2/
-│   └── chapter3/
+│   ├── raw/
+│   │   ├── australia_trade_raw.xlsx
+│   │   └── petroleum_exports.csv
+│   └── processed/
+│       └── processed_data.xlsx
+|
+├── scripts/
+│   ├── data_cleaning.py
+│   └── sql_transformation_queries.sql
+|
+├── models/
+│   └── petroleum_analytics.pbix
+|
 ├── dashboards/
 │   ├── petroleum_vs_LNG.twb
 │   └── energy_export_dashboard.twb
+|
 ├── reports/
 │   └── assessment3_report.pdf
-├── README.md
-
+|
+└── visuals/
+    ├── chapter1/
+    ├── chapter2/
+    └── chapter3/
