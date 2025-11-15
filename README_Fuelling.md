@@ -1,25 +1,31 @@
 # Fuelling the Future: Strategic Insights and Forecasts for Australia's Petroleum Export Landscape
 
-**Author:** Chirayu Dudhade 
-**Course:** 32146 - Data Visualisation and Visual Analytics  
+**Author:** Chirayu Dudhade  
+ **Course:** 32146 - Data Visualisation and Visual Analytics  
 **Project Type:** Visual Analytics & Forecasting  
 **Date:** June 2025
 
 ---
 
-## Project Overview
+## Project Summary
 
-This project provides a comprehensive visual analytics study of **Australia's international trade** from 1988 to 2024, with a focus on **Mineral Fuels (Category 3)**, particularly **Petroleum (Subcategory 33)**. The goal is to deliver actionable insights and strategic forecasts for policymakers and industry stakeholders, combining **data-driven analysis** with **interactive visualizations**.
+This project analyses Australia’s petroleum export and energy trade trends from 1988–2024 and provides forecasted exports for 2025–2029 under multiple geopolitical and global demand scenarios. Using Tableau dashboards, storyboards, and Excel-based analysis, it uncovers critical trade patterns, volatility, and actionable insights for policymakers and industry stakeholders.
+
+**Business Value:** Supports infrastructure investment decisions, financial resilience, risk management, and strategic planning for Australia’s energy sector.
 
 ---
 
 ## Key Objectives
 
-- Analyse Australia’s historical import and export trends in petroleum and energy commodities.
-- Identify critical fluctuations, structural shifts, and patterns within the energy sector.
-- Forecast petroleum exports from 2025–2029 under different geopolitical and global demand scenarios.
-- Provide actionable recommendations for infrastructure investment, financial resilience, energy diversification, and policy adaptability.
-- Leverage **dashboards** and **storyboards** to communicate complex insights effectively.
+- Analyse historical import/export trends for petroleum and energy commodities.  
+- Identify structural shifts, critical fluctuations, and long-term trade patterns.  
+- Forecast petroleum exports (2025–2029) under four strategic scenarios:  
+  - **Boom Rebound** – High demand, high stability  
+  - **Volatile Riches** – High demand, low stability  
+  - **Green Phaseout** – Low demand, high stability  
+  - **Global Breakdown** – Low demand, low stability  
+- Provide actionable recommendations for infrastructure, financial resilience, energy diversification, and policy adaptability.  
+- Communicate insights via interactive dashboards and storyboards.
 
 ---
 
@@ -36,20 +42,18 @@ This project provides a comprehensive visual analytics study of **Australia's in
 ## Methodology
 
 ### 1. Data Preparation & Transformation
-
-- Merged import and export datasets into a unified structure.
-- Created separate sheets for:
-  - **Raw dollar values**
-  - **Analytical trends (YoY change)**
-  - **Statistical proportions**
-- Ensured data integrity: no missing values, duplicates, or outliers.
+- Merged import/export datasets into a unified structure.  
+- Created separate sheets for:  
+  - Raw dollar values  
+  - Analytical trends (YoY change)  
+  - Proportional ratios / indices  
+- Ensured data integrity: removed duplicates, handled missing values, verified consistency.
 
 ### 2. Analytical Techniques
-
-- Year-over-Year Change Analysis:  
-  `Annual Change = ((Current Year - Previous Year) / Previous Year) * 100`
-- Proportional ratios for subcategories and categories relative to total trade.
-- Indexed trade value trends to uncover long-term growth and volatility patterns.
+- **Year-over-Year Change:**  
+  `Annual Change = ((Current Year - Previous Year) / Previous Year) * 100`  
+- Proportional ratios for subcategories relative to total trade.  
+- Indexed trends to highlight long-term growth, volatility, and sector dynamics.
 
 ### 3. Visualization & Storytelling
 
@@ -75,22 +79,22 @@ This project provides a comprehensive visual analytics study of **Australia's in
 
 ### Historical Trends (1988–2014)
 
-- Petroleum imports rose 23×, highlighting dependence on imported fuels.
-- Natural gas exports surged 90×, emerging as a key global player in LNG markets.
-- Coal exports plateaued while petroleum exports fluctuated with global oil prices.
+- Petroleum imports rose 23× → heavy dependence on imports.  
+- Natural gas exports surged 90× → Australia emerged as a key LNG player.  
+- Coal exports plateaued; petroleum exports fluctuated with global oil prices.
 <img width="652" height="334" alt="image" src="https://github.com/user-attachments/assets/fc683ece-37f3-4b77-81ca-256d35e38a64" />
 
 ### Recent Dynamics (2015–2024)
 
-- Petroleum exports showed extreme volatility due to global shocks: 2016 oil crash, 2020 COVID-19 pandemic, 2022 Ukraine conflict.
-- LNG exports consistently increased, surpassing petroleum as Australia’s most valuable energy export.
+- Extreme volatility in petroleum exports due to global shocks: 2016 oil crash, 2020 COVID-19, 2022 Ukraine conflict.  
+- LNG exports consistently grew, surpassing petroleum as Australia’s most valuable energy export.
 <img width="650" height="402" alt="image" src="https://github.com/user-attachments/assets/76f90dc7-f282-4068-9ee3-5a302dc15faa" />
 
 
 ### Forecast (2025–2029)
 
-- Petroleum exports projected to grow steadily from $16.7B (2025) to $20.1B (2029).
-- Strategic planning crucial under varying global demand and geopolitical conditions.
+- Petroleum exports projected to grow from $16.7B (2025) → $20.1B (2029).  
+- Strategic planning is crucial under varying global demand and geopolitical conditions. 
 <img width="593" height="362" alt="image" src="https://github.com/user-attachments/assets/63e6622b-53ff-4ef4-a706-64740e8fdf26" />
 
 
@@ -129,9 +133,11 @@ _Interactive dashboards were developed using Tableau to complement narrative sto
 
 ## Tools & Technologies
 
-- **Data Processing:** Microsoft Excel (data cleaning, transformation, YoY calculations)  
-- **Visualization & Dashboards:** Tableau (interactive dashboards and storyboards)  
-- **Statistical Analysis:** Descriptive statistics, index calculations, proportional ratios
+- **Data Processing:** Excel (cleaning, transformation, YoY calculations)  
+- **Visualization:** Tableau (dashboards & storyboards)  
+- **Statistical Analysis:** Descriptive stats, indices, proportional ratios  
+
+**Skills Demonstrated:** Data cleaning, Tableau visualization, forecasting, business insights, scenario planning, report writing
 
 ---
 
@@ -141,33 +147,35 @@ This project integrates historical analysis, volatility assessment, forecasting,
 
 ---
 
+## Future Work
+
+- Extend analysis to renewable energy exports.  
+- Integrate predictive ML models for more accurate forecasting.  
+- Develop Power BI dashboards for interactive portfolio demonstration.
+
+---
+
 ## Project Structure
 
 ```text
 ├── .gitignore
 ├── README.md
-|
 ├── data/
 │   ├── raw/
 │   │   ├── australia_trade_raw.xlsx
 │   │   └── petroleum_exports.csv
 │   └── processed/
 │       └── processed_data.xlsx
-|
 ├── scripts/
 │   ├── data_cleaning.py
 │   └── sql_transformation_queries.sql
-|
 ├── models/
 │   └── petroleum_analytics.pbix
-|
 ├── dashboards/
 │   ├── petroleum_vs_LNG.twb
 │   └── energy_export_dashboard.twb
-|
 ├── reports/
 │   └── assessment3_report.pdf
-|
 └── visuals/
     ├── chapter1/
     ├── chapter2/
