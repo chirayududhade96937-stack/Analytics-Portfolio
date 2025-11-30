@@ -158,3 +158,59 @@ To enhance insights and support risk analysis, I created new **analytical column
 
 **Outcome:**  
 The dataset is now **feature-rich, clean, and structured**, serving as a strong foundation for creating **advanced DAX measures** and **interactive dashboards**. This process emphasized the importance of **data validation, feature engineering, and troubleshooting real-world dataset challenges**, key skills for effective business intelligence analysis.
+
+# Loan Portfolio Analysis — DAX Measures
+
+This phase involved creating key DAX measures in Power BI to quantify loan portfolio performance, evaluate borrower risk, and calculate financial exposure. These measures form the core analytical foundation for all dashboard visualizations and risk assessment.
+
+## Objective
+
+- Quantify overall loan activity (volume, approvals/denials).  
+- Measure portfolio health using averages of credit score, LTV, and DTI.  
+- Estimate financial exposure through total loan amounts and interest.  
+- Enable risk segmentation and data-driven insights.  
+
+## Key Metrics and Formulas
+
+| Metric | DAX Formula | Interpretation & Insight |
+|--------|------------|-------------------------|
+| **Total Loans** | `COUNTROWS('Loan_Default')` | Counts all applications; base for all further calculations. |
+| **Approval Rate %** | `DIVIDE(CALCULATE(COUNTROWS('Loan_Default'), 'Loan_Default'[Status] = "Approved"), [Total Loans], 0)` | Proportion of approved applications; indicates strictness of lending criteria. |
+| **Denial Rate %** | `DIVIDE(CALCULATE(COUNTROWS('Loan_Default'), 'Loan_Default'[Status] = "Denied"), [Total Loans], 0)` | Proportion of denied applications; complements approval rate. |
+| **Average Loan Amount** | `AVERAGE('Loan_Default'[loan_amount])` | Shows typical loan size requested. |
+| **Average Credit Score** | `AVERAGE('Loan_Default'[Credit_Score])` | Measures overall applicant creditworthiness. |
+| **Average LTV** | `AVERAGE('Loan_Default'[LTV])` | Reflects collateral exposure risk. |
+| **Average DTI** | `AVERAGE('Loan_Default'[dtir1])` | Indicates borrower leverage and repayment capacity. |
+| **Total Loan Amount** | `SUM('Loan_Default'[loan_amount])` | Total portfolio exposure in monetary terms. |
+| **Total Interest** | `SUMX('Loan_Default', 'Loan_Default'[loan_amount] * 'Loan_Default'[rate_of_interest] / 100)` | Estimated total interest revenue; critical for profitability analysis. |
+
+## Why These Metrics Were Created
+
+- **Portfolio Scale & Performance:** Total loans, approvals, and denials provide insight into operational efficiency and selection criteria.  
+- **Risk Assessment:** Credit Score, LTV, DTI, and loan amount highlight financial risk and borrower quality.  
+- **Revenue Estimation:** Total interest quantifies potential income from the portfolio.  
+- **Dashboard Foundation:** Enables interactive and insightful Power BI dashboards for executives and analysts.  
+
+## Output & Insights (Executive Summary)
+
+The initial calculation of Core KPIs immediately highlights the lending strategy's profile:
+
+- **Total Loans:** 149K applications  
+- **Total Loan Amount:** 49.23 billion AUD  
+- **Approved Loans:** 37K (25% approval rate)  
+- **Denied Loans:** 112K (75% denial rate)  
+- **Avg Credit Score:** 699.79 (Good)  
+- **Avg LTV:** 65.36% (low risk)  
+- **Avg DTI:** 31.61% (healthy leverage)  
+- **Avg Loan Amount:** 331.12K AUD  
+- **Total Interest:** 1.50 billion AUD  
+
+### Key Insight: The Low Approval Rate Disconnect
+
+Only 1 out of 4 applications are approved, despite the average applicant showing a **"Good" credit score (~700)**, **low LTV (65%)**, and **healthy DTI (31%)**. This suggests:
+
+- **Policy Tightness:** The current lending criteria is highly restrictive, potentially rejecting profitable, low-risk applicants.  
+- **Hidden Risk:** The high volume of denials is likely driven by extreme values in the unapproved segment (e.g., LTV > 90% or DTI > 50%) which are offset by the healthy approved loans, leading to misleading aggregate averages.  
+
+**Outcome:** The dataset is now feature-rich, clean, and structured, serving as a strong foundation for creating advanced DAX measures and interactive dashboards. This process emphasized the importance of **data validation, feature engineering, and troubleshooting real-world dataset challenges**, key skills for effective business intelligence analysis.
+
