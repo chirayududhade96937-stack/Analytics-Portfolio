@@ -220,7 +220,7 @@ This page provides a high-level view of the loan portfolio, focusing on performa
 
 <img width="1311" height="731" alt="image" src="https://github.com/user-attachments/assets/0029aaa9-2904-43d0-9ad4-eb862bf8bd11" />
 
-## KPI Cards — Core Portfolio Metrics
+## Core Portfolio Metrics
 
 **Data Shown:**
 
@@ -235,7 +235,7 @@ The KPI cards summarize the most critical metrics for the portfolio. The total l
 
 ---
 
-## Line Chart — Approval Rate by Region
+## Approval Rate by Region
 
 **Data Shown:**
 
@@ -249,7 +249,7 @@ The line chart reveals regional differences in approval rates. North-East has th
 
 ---
 
-## Column Chart — Average Loan Amount by Region
+## Average Loan Amount by Region
 
 **Data Shown:**
 
@@ -263,7 +263,7 @@ This chart highlights regional variations in the average loan amount. The South 
 
 ---
 
-## Matrix / Table — Loan Type by Purpose
+## Loan Type by Purpose
 
 **Data Shown:**
 
@@ -288,8 +288,95 @@ This chart highlights regional variations in the average loan amount. The South 
 **Outcome & Insights:**  
 The matrix shows loan demand by type and purpose. Standard purchase loans dominate the portfolio, with significant activity in new and older used vehicles. Refinance and lease buyout loans contribute smaller but relevant portions. This distribution provides insight into product popularity, helps identify high-demand areas, and supports decision-making for marketing, risk evaluation, and product development.
 
----
 
 ## Overall Outcome
 
 The combination of KPI cards, line and column charts, and the loan type matrix provides a clear snapshot of the portfolio’s scale, performance, regional patterns, and product mix. This foundational view guides deeper analysis in subsequent pages, such as risk assessment and borrower segmentation.
+
+---
+
+# Risk & Eligibility Analysis
+
+This page examines the key risk factors that influence loan approval decisions. By analyzing credit score bands, LTV and DTI ranges, and the relationships between loan amount, interest rate, and approval status, we identify the underlying patterns that shape the bank’s lending decisions.
+
+<img width="1106" height="620" alt="image" src="https://github.com/user-attachments/assets/745dd707-11c1-4703-8c86-fb56e493667d" />
+
+## Approval Rate by Credit Score Band**
+
+### **Data Shown**
+- **Excellent:** 24.93%  
+- **Poor:** 24.66%  
+- **Fair:** 24.48%  
+- **Good:** 24.16%  
+- **Overall Average:** ~25%
+
+### **Outcome & Insights**
+- Approval rate remains nearly identical across all credit score bands—including **Excellent** and **Poor**.  
+- This indicates **credit score is not a major determining factor** in loan approvals.  
+- Other variables such as **LTV, DTI, collateral risk**, and internal scoring models are driving the majority of decisions.  
+- This challenges traditional assumptions and shifts focus toward the **actual drivers of approval**.
+
+---
+
+## Total Denied Loans by LTV and DTI Range**
+
+### **Data Shown**
+Denials across LTV ranges:
+- **LTV 60–80%:** 17,193 (High Risk)  
+- **LTV Below 60%:** 10,566 (High Risk)  
+- **LTV 80–90%:** 8,058 (High Risk)  
+- **LTV Over 90%:** 7,167 (High Risk)
+
+### **Outcome & Insights**
+- Denials increase significantly in **higher LTV** and **moderate-to-high DTI** combinations.  
+- Confirms that **collateral risk (LTV)** and **repayment risk (DTI)** are central to the bank’s underwriting model.  
+- Highlights high-risk segments where most denials occur.  
+- Supports better **risk segmentation** and potential adjustments to lending rules.
+
+---
+
+## Scatter Plot — Loan Amount vs Interest Rate (Colored by Status)**
+
+### **Data Shown**
+- **X-axis:** Loan Amount  
+- **Y-axis:** Interest Rate  
+- **Color:** Approval Status (Approved / Denied)
+
+### **Outcome & Insights**
+- Approvals cluster around **moderate loan amounts (under $1M)** and **interest rates between 4%–5%**.  
+- Higher loan amounts show fewer approvals.  
+- Very low interest rates contain many denials → suggests **data quality issues or strict filtering**.  
+- Reveals the bank’s **risk appetite** and the “**sweet spot**” where approvals are most common.  
+- Helps identify **profitable and lower-risk product ranges**.
+
+---
+
+## Scatter Plot — LTV vs DTI (Colored by Status)**
+
+### **Data Shown**
+- **X-axis:** LTV  
+- **Y-axis:** DTI  
+- **Color:** Approval Status  
+- **Approved Cluster:** Low LTV, Low DTI  
+- **Denials Dominate:** High LTV + High DTI and mid-risk zones
+
+### **Outcome & Insights**
+- Clearly visualizes the bank’s lending logic.  
+- Approved loans cluster in **low-risk zones**: low LTV + low DTI.  
+- Denials dominate high-risk regions: **LTV > 120** and **DTI > 50–60** → indicates **hard underwriting limits**.  
+- Medium-risk zones showing mixed results suggest influence from **additional risk variables** (e.g., collateral type).  
+- Confirms that **LTV and DTI are the strongest predictors of approval**.
+
+---
+
+## **Overall Outcome**
+
+This page provides essential insights into the drivers behind loan approvals and denials:
+
+- **Credit score has minimal influence** on approval outcomes.  
+- **LTV and DTI are the primary determinants of eligibility**.  
+- Findings reveal clear **risk boundaries**, highlight **profitable borrower segments**, and explain where the bank exercises caution.  
+- This analysis forms the foundation for refining risk strategies and optimizing the underwriting process.
+
+---
+
