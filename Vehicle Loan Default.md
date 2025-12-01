@@ -380,3 +380,85 @@ This page provides essential insights into the drivers behind loan approvals and
 
 ---
 
+# Loan Profile Analysis
+This page examines borrower behaviour and portfolio characteristics by analysing income, loan term, and loan purpose. The goal is to identify patterns that influence loan approvals, financial exposure, and risk across different borrower segments.
+
+---
+
+<img width="1112" height="627" alt="image" src="https://github.com/user-attachments/assets/d0b3d06b-56eb-4558-9e47-ca4af3362c6c" />
+
+---
+
+## Income vs Loan Amount (Scatter Plot)
+
+**Data Shown**
+- X-axis: Borrower Income (up to $600K)
+- Y-axis: Loan Amount (up to $4M)
+- Color: Approval Status (1 = Approved, 0 = Denied)
+
+**Outcome & Insights**
+- Approvals cluster among borrowers with **moderate loan amounts (<$1M)** and incomes above **~$100K**.
+- Low-income applicants requesting high loan amounts are heavily denied, reflecting strict **Debt-to-Income (DTI)** limits.
+- High-income borrowers with small loan requests are almost universally approved.
+- Very high loan amounts (> $3M) are only approved when income is sufficient.
+- Highlights a **non-linear relationship** between income and approval: income is a key affordability filter but not the sole determinant.
+
+---
+
+## Loan Term vs Approval Rate (Line Chart)
+
+**Data Shown**
+- Loan Term Bins (Months): 0–24, 25–48, 49–72, 73–96, 96+ up to 360 months
+- Approval Rate % per bin
+
+**Outcome & Insights**
+- Standard loan terms (96–240 months) maintain an approval rate of **15–27%**, representing the core lending range.
+- Longer-term loans (>240 months) show **variable approval rates**, including spikes and outliers.
+- Notable spikes at **300 months (56.56%)** suggest targeted lending programs.
+- Bank exercises caution with **very long-term loans**, reflecting higher exposure and repayment risk.
+
+---
+
+## Loan Purpose vs Loan Volume & Exposure (Bar Chart)
+
+**Data Shown**
+- Volume and total exposure by loan purpose:
+  - Used Vehicle (Older / High Mileage): 55,934 loans / $16.49B exposure
+  - Recreational/Specialty Vehicle: 54,799 loans / $20.33B exposure
+  - New Vehicle Loans: 34,663 loans / $11.74B exposure
+  - Used Vehicle (Up to 5 years): 3,274 loans / $662.86M exposure
+
+**Outcome & Insights**
+- **Used Vehicles (Older / High Mileage)** have the **highest volume**, contributing substantial risk.
+- **Recreational/Specialty Vehicles** carry the **highest exposure**, representing discretionary and risky purchases.
+- **New Vehicle Loans** show moderate exposure with predictable, low-risk collateral.
+- Small-volume segments like **Used Vehicles (Up to 5 years)** have low exposure and are highly manageable.
+- Supports **strategic allocation and risk management** by identifying high-risk, high-exposure segments.
+
+---
+
+## Loan Purpose vs Approval Rate (Clustered Bar / Column Chart)
+
+**Data Shown**
+- Approval rate by loan purpose:
+  - Used Vehicle (Up to 5 years): 33.08%
+  - New Vehicle Loans: 25.88%
+  - Used Vehicle (Older / High Mileage): 25.02%
+  - Recreational/Specialty Vehicle: 22.97%
+
+**Outcome & Insights**
+- **Used Vehicles (Up to 5 years)** have the **highest approval rate**, indicating low-risk collateral and stable borrowers.
+- **New Vehicle Loans** perform close to portfolio average.
+- **Older Used Vehicles** align with the overall portfolio benchmark.
+- **Recreational/Specialty Vehicles** have the **lowest approval rate** but the **highest financial exposure**.
+- Provides **targeted insights for risk-based pricing, marketing strategies, and product focus**.
+
+---
+
+## Overall Outcome
+This page delivers detailed insights into loan profile dynamics:
+
+- Borrower **income** is a strong filter, especially for high loan amounts.
+- **Loan term** affects approval risk, with standard durations stable and longer terms requiring selective evaluation.
+- **Loan purpose** drives portfolio exposure and approval likelihood, with discretionary and high-risk segments receiving stricter scrutiny.
+- Supports **strategic lending decisions, risk management, and product portfolio optimisation**.
