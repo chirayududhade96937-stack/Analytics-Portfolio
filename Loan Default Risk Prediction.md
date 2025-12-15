@@ -1,4 +1,4 @@
-# Loan Default Risk Prediction Using Optimized Logistic Regression
+# Risk Prediction Using Optimized Logistic Regression
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
 ![Colab](https://img.shields.io/badge/Google_Colab-Run_in_Colab-orange?logo=googlecolab&logoColor=white)
