@@ -462,3 +462,165 @@ This page delivers detailed insights into loan profile dynamics:
 - **Loan term** affects approval risk, with standard durations stable and longer terms requiring selective evaluation.
 - **Loan purpose** drives portfolio exposure and approval likelihood, with discretionary and high-risk segments receiving stricter scrutiny.
 - Supports **strategic lending decisions, risk management, and product portfolio optimisation**.
+
+---
+
+# Advanced Modelling & Portfolio Dynamics
+
+This page applies advanced analytical techniques to move beyond descriptive insights and examine **portfolio structure, borrower behavior, and embedded risk concentration**. By combining income segmentation, loan term accumulation, portfolio-level financial indicators, and risk personas, this analysis provides a deeper understanding of how the loan book scales, where approvals concentrate, and which borrower segments drive risk.
+
+---
+
+<img width="1108" height="620" alt="image" src="https://github.com/user-attachments/assets/b7782463-9efd-4678-9cdb-f0e5b310517b" />
+
+
+## Income Band vs Approval Rate & Loan Volume
+
+### Data Shown
+- **Income Bands:** Low (<30K), Medium, High (60K–100K), Very High  
+- **Metrics:**
+  - Approval Rate %
+  - Total Number of Loan Applications
+
+### Outcome & Insights
+This visual highlights a clear imbalance between **loan demand** and **approval efficiency**.
+
+- Approval rates increase as income rises:
+  - Highest approval rate occurs in the **High (60K–100K)** income band.
+  - Lowest approval rate is observed in the **Low (<30K)** income band.
+- At the same time, loan applications are overwhelmingly concentrated in the **lowest income segment**.
+
+### Key Insight
+While low-income borrowers generate the **largest volume of applications**, they also experience the **highest rejection rates**. Higher-income applicants, although far more likely to be approved, represent only a small share of total demand. This explains why overall portfolio approval rates remain low despite strong approval performance in higher-income segments.
+
+---
+
+## Loan Term vs Cumulative Approved Loans
+
+### Data Shown
+- **Loan Term (Months)**
+- **Cumulative Count of Approved Loans**
+
+### Outcome & Insights
+This analysis reveals how approved loans accumulate across different loan durations.
+
+- Significant accumulation occurs at standard loan tenures:
+  - **180 months (15 years)**
+  - **240 months (20 years)**
+  - **360 months (30 years)**
+- The largest increase in cumulative approvals occurs at **360 months**, indicating that long-term loans dominate the approved portfolio.
+
+### Key Insight
+The portfolio is structurally concentrated in **long-duration lending**, with 30-year terms forming the backbone of approved loans. This reflects borrower affordability preferences while simultaneously increasing the bank’s long-term exposure, making loan duration a critical component of portfolio risk management.
+
+---
+
+## Key Portfolio Financial Indicators
+
+### Data Shown
+- **Total Loans:** 148,670  
+- **Weighted Average Interest Rate:** 3.05%
+
+### Outcome & Insights
+These indicators provide an **executive-level snapshot** of portfolio scale and pricing.
+
+- The total loan count confirms a large, active lending portfolio.
+- The weighted average interest rate reflects **stable pricing** across approved loans.
+
+### Key Insight
+Despite a high volume of applications and approvals, the portfolio maintains a **controlled and consistent pricing structure**, suggesting disciplined underwriting and balanced risk–return trade-offs.
+
+---
+
+## Borrower Risk Personas (LTV & DTI Based)
+
+### Data Shown
+- **Risk Categories:**
+  - Low Risk
+  - Medium Risk
+  - High Risk
+  - Very High Risk
+- Classification derived from **combined LTV and DTI thresholds**
+
+### Outcome & Insights
+This visual consolidates multiple underwriting variables into **intuitive borrower risk profiles**.
+
+- Low-risk borrowers cluster around **low LTV and low DTI** values.
+- High and very high-risk segments emerge as leverage and repayment burden increase.
+- Interactive filtering enables rapid isolation of **risk-heavy segments** within the portfolio.
+
+### Key Insight
+Risk personas transform complex financial metrics into **actionable decision tools**, enabling faster identification of exposure concentration and supporting scenario-based risk assessment.
+
+---
+
+## Overall Outcome
+
+This page demonstrates how advanced modelling enhances portfolio understanding by revealing **structural imbalances, duration concentration, pricing stability, and borrower risk segmentation**. The insights bridge borrower behavior and portfolio strategy, providing a forward-looking foundation for **risk optimization and policy refinement**.
+
+---
+
+# Conclusion & Recommendations
+
+## Project Conclusion
+
+This Loan Default Analysis project set out to understand **why loan applications are approved or denied**, **where risk is concentrated**, and **how the loan portfolio behaves structurally over time**. By progressing from high-level metrics to advanced modelling, the analysis delivers a complete, end-to-end view of the bank’s lending decisions.
+
+**Page 1 – Executive Summary** established the overall context of the portfolio. With **148,670 total applications** and an approval rate of **24.64%**, the portfolio operates under strict lending criteria. Core metrics such as average loan amount, credit score, and LTV indicated a generally moderate-risk borrower base, while regional differences revealed variations in approval behavior and exposure.
+
+**Page 2 – Risk & Eligibility Analysis** uncovered the most critical insight of the project:  
+**credit score plays a minimal role in approval decisions**, while **LTV and DTI are the dominant drivers of eligibility**. Clear underwriting boundaries emerged, with approvals clustering at low LTV and low DTI levels, and denials rising sharply beyond DTI levels of ~50–60 and high LTV thresholds. This page explained the source of the portfolio’s high denial rate and highlighted where risk management decisions are most conservative.
+
+**Page 3 – Customer & Loan Profile Analysis** shifted the focus to borrower behavior and product structure. The analysis showed that:
+- Lower-income borrowers generate the largest demand but experience the highest rejection rates.
+- Loan approvals concentrate heavily in **long-term products**, particularly **30-year loan terms**.
+- Certain loan purposes, such as recreational and specialty vehicles, carry **disproportionately high financial exposure** while delivering lower approval performance.
+
+This page explained *who* the borrowers are, *what* products dominate the portfolio, and *where* exposure accumulates.
+
+**Page 4 – Advanced Modelling & Portfolio Dynamics** brought all insights together using advanced analytical techniques. Income segmentation, cumulative loan term analysis, weighted pricing metrics, and borrower risk personas revealed deeper structural patterns. The portfolio was shown to be:
+- Highly dependent on **long-duration lending**
+- Strongly skewed toward **low-income application volume**
+- Carefully priced with a stable weighted average interest rate
+- Heavily influenced by LTV–DTI based risk segmentation rather than traditional credit scoring
+
+Together, the four pages tell a cohesive story:  
+**Loan denials are not random, nor credit-score driven — they are the result of deliberate risk controls centered on affordability, leverage, loan structure, and exposure management.**
+
+---
+
+## Strategic Recommendations
+
+Based on the insights derived from this analysis, the following recommendations are proposed to improve portfolio performance, risk efficiency, and decision transparency.
+
+### 1. Rebalance Credit Score Weighting in Underwriting
+The approval rate remains nearly identical across all credit score bands, indicating underutilization of this metric.  
+**Recommendation:** Reintroduce credit score as a secondary decision layer within mid-risk LTV–DTI zones to avoid unnecessarily rejecting otherwise creditworthy applicants.
+
+### 2. Optimize the “Mixed-Risk” Decision Zone
+A large portion of denials occurs where LTV and DTI are moderate but not extreme.  
+**Recommendation:** Develop refined risk rules or pricing adjustments (risk-based interest rates) for this middle segment to convert safe borderline applicants into profitable approvals.
+
+### 3. Address High Exposure Loan Purposes
+Recreational and specialty vehicle loans represent the **highest financial exposure** with the **lowest approval performance**.  
+**Recommendation:** Introduce tighter collateral requirements or higher pricing for these loan purposes to better compensate for elevated risk.
+
+### 4. Reduce Concentration Risk in Long-Term Loans
+The portfolio is heavily concentrated in **360-month loan terms**, increasing long-term exposure and sensitivity to macroeconomic changes.  
+**Recommendation:** Encourage shorter-term products through incentives or adjusted pricing to improve portfolio flexibility and reduce duration risk.
+
+### 5. Improve Low-Income Borrower Screening
+Low-income applicants drive the majority of applications but also the majority of denials.  
+**Recommendation:** Implement pre-application eligibility checks or income-adjusted loan limits to reduce operational costs and improve applicant experience.
+
+### 6. Leverage Risk Personas for Policy Simulation
+Risk personas derived from LTV and DTI provide a powerful decision framework.  
+**Recommendation:** Use these personas for scenario testing, policy simulations, and stress testing to proactively manage future portfolio risk.
+
+---
+
+## Final Takeaway
+
+This project demonstrates how **data-driven storytelling** can transform raw loan data into actionable business insights. By integrating descriptive analytics, risk modeling, borrower segmentation, and advanced DAX-driven logic, the analysis provides both **strategic clarity** and **technical depth**.
+
+The outcome is a portfolio-ready Power BI solution that not only explains *what is happening*, but also *why it is happening* and *how decision-makers can respond*. This approach reflects real-world financial analytics practices and showcases strong capabilities in **data modeling, business interpretation, and executive communication**.
