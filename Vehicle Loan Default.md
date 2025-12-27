@@ -218,7 +218,8 @@ Only 1 out of 4 applications are approved, despite the average applicant showing
 
 This page provides a high-level view of the loan portfolio, focusing on performance, trends, and regional variations. Each visual delivers specific insights to support strategic decision-making.
 
-<img width="1311" height="731" alt="image" src="https://github.com/user-attachments/assets/0029aaa9-2904-43d0-9ad4-eb862bf8bd11" />
+<img width="1327" height="738" alt="image" src="https://github.com/user-attachments/assets/0ad44d64-b62f-4145-9aaa-a7e9a79fbd43" />
+
 
 ## Core Portfolio Metrics
 
