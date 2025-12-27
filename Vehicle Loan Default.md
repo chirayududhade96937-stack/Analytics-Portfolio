@@ -218,7 +218,7 @@ Only 1 out of 4 applications are approved, despite the average applicant showing
 
 This page provides a high-level view of the loan portfolio, focusing on performance, trends, and regional variations. Each visual delivers specific insights to support strategic decision-making.
 
-<img width="1327" height="738" alt="image" src="https://github.com/user-attachments/assets/0ad44d64-b62f-4145-9aaa-a7e9a79fbd43" />
+<img width="1278" height="720" alt="image" src="https://github.com/user-attachments/assets/95ba1abb-a15e-49d0-bd44-f018252685cc" />
 
 
 ## Core Portfolio Metrics
@@ -300,7 +300,8 @@ The combination of KPI cards, line and column charts, and the loan type matrix p
 
 This page examines the key risk factors that influence loan approval decisions. By analyzing credit score bands, LTV and DTI ranges, and the relationships between loan amount, interest rate, and approval status, we identify the underlying patterns that shape the bank’s lending decisions.
 
-<img width="1106" height="620" alt="image" src="https://github.com/user-attachments/assets/745dd707-11c1-4703-8c86-fb56e493667d" />
+<img width="1275" height="713" alt="image" src="https://github.com/user-attachments/assets/bc0056a4-759f-4a3a-a72c-e0c88ff3e499" />
+
 
 ## Approval Rate by Credit Score Band
 
@@ -386,7 +387,7 @@ This page examines borrower behaviour and portfolio characteristics by analysing
 
 ---
 
-<img width="1331" height="741" alt="image" src="https://github.com/user-attachments/assets/b55164eb-4659-49e8-958c-65be74a0e951" />
+<img width="1278" height="717" alt="image" src="https://github.com/user-attachments/assets/8b02a154-3d75-4084-a840-adfb918c64ba" />
 
 
 ---
@@ -473,7 +474,7 @@ This page applies advanced analytical techniques to move beyond descriptive insi
 
 ---
 
-<img width="1108" height="620" alt="image" src="https://github.com/user-attachments/assets/b7782463-9efd-4678-9cdb-f0e5b310517b" />
+<img width="1277" height="717" alt="image" src="https://github.com/user-attachments/assets/fbad4f93-d3a2-44ac-8067-7e5a1566dff1" />
 
 
 ## Income Band vs Approval Rate & Loan Volume
