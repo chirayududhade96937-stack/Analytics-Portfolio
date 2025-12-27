@@ -385,7 +385,8 @@ This page examines borrower behaviour and portfolio characteristics by analysing
 
 ---
 
-<img width="1112" height="627" alt="image" src="https://github.com/user-attachments/assets/d0b3d06b-56eb-4558-9e47-ca4af3362c6c" />
+<img width="1331" height="741" alt="image" src="https://github.com/user-attachments/assets/b55164eb-4659-49e8-958c-65be74a0e951" />
+
 
 ---
 
