@@ -1,4 +1,4 @@
-# Retail Revenue Optimization: A Data-Driven Roadmap to International Expansion
+# Strategic Retail Growth & Revenue Diagnostics Using Power BI
 
 ![Project](https://img.shields.io/badge/Project-Visual_Analytics-blue)
 ![Power BI](https://img.shields.io/badge/Tool-Power_BI-yellow?logo=power-bi&logoColor=black)
