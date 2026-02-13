@@ -1,4 +1,4 @@
-# 📊 Loan Application Risk & Performance Analysis (Power BI)
+# 📊 Loan Application Risk & Performance Analysis
 
 ![Project](https://img.shields.io/badge/Project-Business_Analytics-blue)
 ![Power BI](https://img.shields.io/badge/Power_BI-Dashboarding-orange?logo=power-bi&logoColor=white)
